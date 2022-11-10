@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    max-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background-color: rgb(42, 41, 41);
+}
+h2{
+    background-color: rgb(93, 86, 86);
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: normal;
+}
+.screen{
+    cursor: pointer;
+    width: 50%;
+    height: 400px;
+    background-color: black !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.controls{
+    display: flex;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    width: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.controls .btn{
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+}
+.controls .fa-play{
+    color: green;
+}
+.controls .fa-stop{
+    color: red;
+}
+.controls .fa-pasue{
+    color: blanchedalmond;
+}
+.controls .timestamp{
+    font-weight: bold;
+    margin-left: 10px;
+}
+.btn:focus{
+    outline: 0;
+}
+@media (max-width: 800px) {
+    .screen,
+    .controls {
+      width: 90%;
+    }
+  }
+/* @mondalcodehub | November-2022 */
